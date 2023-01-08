@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Hubballi&family=Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Hubballi&family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.sidebar {
+    background-color: rgb(59 70 206 / 48%);
+  /*width: 350px;*/
+  position: absolute;
+  font-family: "Edu QLD Beginner", cursive;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-family: "Hubballi", cursive;
+  font-family: "Yeon Sung", cursive;
+  height: 100vh;
+  transition: transform 0.3s ease-in;
+}
+.sidebar nav {
+  padding: 45px;
+  
+}
+.sidebar nav li {
+  list-style: none;
+  font-size: 30px;
+  padding: 33px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+  }
+.main {
+  /*background-color: red;*/
+  width: 80vw;
+  background-color: black;
+  color: white;
+  padding: 23px;
+}
+.mainabout {
+    /*background-color: red;*/
+    width: 80vw;
+    background-color: black;
+    color: white;
+    padding: 23px;
+  }
+.container {
+  display: flex;
+  background: black;
+}
+.infocontainer {
+  /*background-color: pink;*/
+  height: 78vh;
+  width: 60vw;
+  margin: 144px 278px;
+  display: flex;
+  justify-content: space-around;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.hellow {
+  font-size: 77px;
+  /*font-family: "Lobster", cursive;*/
+}
+
+.name {
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+}
+
+.about {
+  font-size: 41px;
+}
+.moreabout {
+    margin-top :25px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.buttons{
+    margin-top:2.2em;
+}
+.buttons button {
+    padding: 7px;
+    border-radius: 59px;
+    color: black;
+    background-color: royalblue;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 3px 9px; 
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color:white;
+    color: black; 
+}
+.devpic img {
+  height: 90vh;
+}
+.pic{
+    margin-top: -156px;
+}
+/*contact*/
+#contact{
+    height: 75vh;
+    width: 79vw;
+    margin: 99px auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.contact-left{
+    font-size:20px;
+    margin-bottom: 38px;
+}
+.sub-title{
+    font-size:45px;
+}
+.social-icons{
+    margin-top:30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size:30px;
+    color: white;
+    display: inline-block;
+}
+.social-icons a:hover{
+    color:red;
+    transition:translateY(-5px);
+}
+.CV{
+    padding: 7px;
+    border-radius: 59px;
+    color: black;
+    background-color: royalblue;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 1px 9px; 
+    cursor: pointer;
+    text-decoration: none;
+}
+.CV:hover {
+    background-color:white;
+    color: black; 
+}
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 46%;
+    /* border: 1px solid red; */
+    outline: none;
+    background-color: white;
+    padding: 21px;
+    margin: 27px 0;
+    color: black;
+    font-size: 25px;
+    border-radius: 33px;
+}
+.submit{
+    padding: 11px;
+    border-radius: 14px;
+    color: black;
+    background-color: royalblue;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 6px 31px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: -373px;
+}
+#msg{
+    color:#c6c7c6;
+    display: block;
+    margin-left: -451px;
+    margin-top: 25px;
+}
+
+/*------------------blog------------------*/
+.blogContainer{
+    margin: 0 155px;
+    height: 804px;
+}
+.blogContainer h1{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 46px;
+    margin-left: 456px;
+    margin-top: 52px;
+    padding: 16px;
+    margin-bottom: 25px;
+}
+.blogContainer h2{
+    font-size: 25px;
+    
+    padding: 17px;
+}
+.blogContainer p{
+    padding: 16px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.blogButton{
+    padding: 7px;
+    border-radius: 45px;
+    color: black;
+    background-color: royalblue;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 1px 12px;
+    cursor: pointer;
+}
+.blogButton:hover {
+    background-color:white;
+    color: black; 
+}
+/*-------------intro----------------*/
+.intro{
+    margin-left: 95px;
+    height: 680px;
+    margin-top: 76px;
+    padding: 25px;
+}
+.intro h1{
+    font-size: 35px;
+    font-family: "Lobster", cursive;
+}
+.intro p{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.skillcontainer{
+    padding:12px;
+}
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.skill{
+    width: 265px;
+    height:6px;
+    background-color:red;
+}
+.s1{
+    width:265px;
+    background-color: rgb(34, 0, 255);
+}
+.s2{
+    width: 250px;
+    
+    background-color:rgb(34, 0, 255);
+    
+}
+.s3{
+    width: 180px;
+    
+    background-color:rgb(34, 0, 255);
+    
+}
+.s4{
+    width: 266px;
+    background-color:rgb(34, 0, 255);
+    
+}
+.s5{
+    width: 100px;
+    
+    background-color:rgb(40, 7, 255);
+    
+}
+.s6{
+    width: 150px;
+    background-color: rgb(46, 14, 255);
+}
+.s7{
+    width:265px;
+    background-color:rgb(31, 0, 233);
+    
+}
+.box1{
+    width: 280px;
+    background-color: black;
+    /* border: white; */
+    border: 2px solid white;
+    margin-left: 11px;
+}
+.box2{
+    width: 280px;
+    background-color: black;
+    /* border: white; */
+    border: 2px solid white;
+    margin-left: 11px;
+}
+.box3{
+    width: 280px;
+    background-color: black;
+    /* border: white; */
+    border: 2px solid white;
+    margin-left: 11px;
+}
+.box4{
+    width: 280px;
+    background-color: black;
+    /* border: white; */
+    border: 2px solid white;
+    margin-left: 11px;
+}
+.box5{
+    width: 280px;
+    background-color: black;
+    /* border: white; */
+    border: 2px solid white;
+    margin-left: 11px;
+}
+.box6{
+    width: 280px;
+    background-color: black;
+    /* border: white; */
+    border: 2px solid white;
+    margin-left:11px;
+}
+.box7{
+    width: 280px;
+    background-color: black;
+    /* border: white; */
+    border: 2px solid white;
+    margin-left: 11px;
+}
+.sidebargo{
+    transform: translate(-352px, 0px);
+    position: absolute;
+}
+.hamburger{
+    position: absolute; 
+    cursor: pointer;
+    top: 12px;
+    left: 10px;
+}
+.ham{
+    margin-top:10px;
+}
+.cross{
+    
+    margin-left:173px;
+    margin-top:10px;
+}
+
+@media(max-width:1000px) {
+    *{
+        /*background-color:red;*/
+    }
+    .pic{
+        display: none;
+    }
+}
+    
+    @media(max-width: 1024px) {
+        *
+        
+       .infocontainer,.blogContainer, .contact-right{
+        margin: 220px 41px;
+        }
+        .intro{
+            margin: 54px -21px;
+        }
+        .mainabout{
+            width: 1000px;
+            height: 920px;
+            background-color: black;
+            color: white;
+             padding: 23px;
+        }
+        .blogcontent{
+            display: none;
+        }
+        .blogContainer h1{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 40px;
+            margin-left: 48px;
+            margin-top: 52px;
+            padding: 11px;
+            margin-bottom: -1px;
+        }
+        .mainblog{
+            margin: -250px -33px;
+            width: 1000px;
+            height: 1000px;
+            background-color: black;
+            color: white;
+            padding: 23px;
+        }
+        .contactcontainer{
+            margin: -270px 2px;
+            width: 356px;
+            height: 1000px;
+        }
+        #contact {
+            height: 72vh;
+            width: 142vw;
+            margin: 66px -32px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .submit {
+            padding: 11px;
+            border-radius: 14px;
+            color: black;
+            background-color: royalblue;
+            font-weight: bold;
+            font-size: 25px;
+            margin: 8px -366px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-left: -366px;
+        }    
+        .maincontact {
+           /*background-color: red;*/
+           height: 858px;
+            background-color: black;
+            color: white;
+            padding: 23px;
+        }
+        .contactform form{
+            margin: 0 40px;
+        }
+        .buttons{
+            font-size:5px;
+        }   
+    }
+
+
+    
+

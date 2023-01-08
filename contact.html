@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unnati Singh- Web Developer, Programmer, ML Enthusiast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar sidebargo">
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/intro.html">My Intro</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!----------------------------------------------------------------->
+      <div class="main maincontact">
+        <div class="hamburger">
+            <img class="ham"src="ham.png" alt=""  width="30px"/>
+            <img class="cross"src="cross.png" alt="" width="30px" />
+          </div>
+        <div id="contact">
+          <div class="container contactcontainer">
+            <div class="row">
+                <!--------
+              <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><span>&#9993;</span> unnatiash27@gmail.com</p>
+                <p><span>&#9742;</span> 7307968327</p>
+                <br />
+                
+                <div class="social-icons">
+                  <a href="http://facebook.com/"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="http://twitter.com/"
+                    ><i class="fab fa-twitter-square"></i
+                  ></a>
+                  <a href="http://linkedin.com/"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </div>
+                <a href="unnati resume.pdf" download class="CV">Download CV</a>
+              </div>---->
+              <div class="contact-right">
+                <h1 class="sub-title">Contact Me</h1>
+                <form name="submit-to-google-sheet">
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Your name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Your email"
+                    required
+                  />
+                  <textarea
+                    name="Message"
+                    ros="6"
+                    placeholder="Your message"
+                  ></textarea>
+                  <br />
+                  <button type="submit" class="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+              </div>
+            </di>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="script.js">
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzTm5n-kvRBfQmpH8inH8XUROUDaUik71OqGpA-S8Drzqtm5_nWumnjCHsQIgKE2uMs/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg")
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function () {
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
